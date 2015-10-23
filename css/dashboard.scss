@@ -1,0 +1,237 @@
+$fontSize: 24;
+body,ul,html{
+	margin:0; padding:0; 
+}
+body,html{
+	height:100%; width:100%;
+}
+li{
+	list-style:none;
+}
+.wrap{
+	width:640/$fontSize+rem; margin:0 auto; text-align:center; overflow:hidden;
+	background-color:#363b51;height:100%;
+}
+.carPateWrap{
+	position:relative; width:100%; height:auto; 
+}
+.unit{
+	font-size:50/$fontSize+rem; position:absolute; top:7.8rem; left:0; color:#7481B0; text-align:center;
+	width:100%; text-align:center; display:block;
+}
+#speed{
+	font-size:140/$fontSize+rem; color:#fff; position:absolute; top:11.2rem;left:0;
+	text-align:center;width:100%; text-align:center; display:block;
+}
+.dashboard{
+	width:auto; height:auto; margin:90/$fontSize+rem auto 50/$fontSize+rem auto; position:absolute;
+	padding-top:9rem; text-align:center; left:50%;
+}
+.dashboard li{
+	width:(4/$fontSize)+rem; height:(22/$fontSize)+rem; background-color:rgba(255,255,255,.3); 
+	position:absolute;
+}
+@for $i from 1 through 44{
+  .dashboard li:nth-child(#{$i}) { 
+  		transform:rotate((6*$i)-135+deg)  translateY(-9.6rem);
+		-ms-transform:rotate((6*$i)-135+deg)  translateY(-9.6rem); 	
+		-moz-transform:rotate((6*$i)-135+deg)  translateY(-9.6rem); 	
+		-webkit-transform:rotate((6*$i)-135+deg)  translateY(-9.6rem); 
+		-o-transform:rotate((6*$i)-135+deg)  translateY(-9.6rem); 
+		
+  }
+}
+.rotateImgBg{
+  position:absolute; width:540/$fontSize+rem; height:540/$fontSize+rem; top:50/$fontSize+rem;left:55/$fontSize+rem;
+  background:url(../img/rotate.png) no-repeat; background-size:90%; z-index:8;  transform-origin:50% 50%;
+  -webkit-animation:circle 1.5s linear 2s 3 both;animation:circle 1.5s linear 2s 3 both;  border-radius:500px; 
+}
+.mask{
+   width:640/$fontSize+rem; height:130/$fontSize+rem; position:absolute;left:0;
+   top:20rem; z-index:10; background-color:#363b51;
+}
+.detailInfo{
+  height:220/$fontSize+rem;width:640/$fontSize+rem; position:absolute; bottom:130/$fontSize+rem;
+  left:50%; margin-left:-(320/$fontSize)+rem;   z-index:55;
+}
+.detailInfoLeft{
+  width:150/$fontSize+rem; float:left; height:220/$fontSize+rem; background:url(../img/photo.png) no-repeat;
+  background-size:82/$fontSize+rem 68/$fontSize+rem; background-position:center; background-color:rgba(0,0,0,.1);
+  z-index:35;
+}
+.detailInfoRight{
+  width:490/$fontSize+rem; float:left; height:220/$fontSize+rem; background-color:rgba(20,20,20,.25);
+  p{
+    text-align:left; padding:0; text-indent:40/$fontSize+rem; margin:10/$fontSize+rem auto 0 auto;
+    color:#fff; font-weight:100;
+  }
+  .txtSmall{
+    font-size:20/$fontSize+rem; padding-top:25/$fontSize+rem;
+  }
+  .txtBlue{
+    font-size:70/$fontSize+rem; color:#50fcfa;
+  }
+  .txtBig{
+    font-size:35/$fontSize+rem; 
+  }
+}
+
+.police{
+  background:url(../img/police.png); background-size:100%; width:320/$fontSize+rem; height:130/$fontSize+rem;
+  position:absolute; bottom:0; left:0;z-index:35;
+}
+.report{
+  background:url(../img/report.png); background-size:100%; width:320/$fontSize+rem; height:130/$fontSize+rem;
+  position:absolute; bottom:0; right:0;
+}
+@-webkit-keyframes circle
+  {
+    0%{-webkit-transform:rotate(-180deg);
+        transform:rotate(-180deg)
+    }
+    100%{
+      -webkit-transform:rotate(180deg);
+      transform:rotate(180deg)
+    }
+}
+@keyframes circle{
+  0%{
+  -webkit-transform:rotate(-180deg);
+  transform:rotate(-180deg)
+  }
+  100%{
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg)
+  }
+}
+.dashboard li:nth-child(1).on {
+  background-color: #4fedb1; }
+
+.dashboard li:nth-child(2).on {
+  background-color: #54efb7; }
+
+.dashboard li:nth-child(3).on {
+  background-color: #5af1be; }
+
+.dashboard li:nth-child(4).on {
+  background-color:#60f3c7; }
+
+.dashboard li:nth-child(5).on {
+  background-color: #66f5ce; }
+
+.dashboard li:nth-child(6).on {
+  background-color: #6bf7d6; }
+
+.dashboard li:nth-child(7).on {
+  background-color: #6ff8dc; }
+
+.dashboard li:nth-child(8).on {
+  background-color: #72f9e2; }
+
+.dashboard li:nth-child(9).on {
+  background-color: #76faea; }
+
+.dashboard li:nth-child(10).on {
+  background-color: #7afaf0; }
+
+.dashboard li:nth-child(11).on {
+  background-color: #7ff7f4; }
+
+.dashboard li:nth-child(12).on {
+  background-color: #85f4f8; }
+
+.dashboard li:nth-child(13).on {
+  background-color: #8af5fa; }
+
+.dashboard li:nth-child(14).on {
+  background-color: #8ef4fd; }
+
+.dashboard li:nth-child(15).on {
+  background-color: #92f2fe; }
+
+.dashboard li:nth-child(16).on {
+  background-color: #92f1ff; }
+
+.dashboard li:nth-child(17).on {
+  background-color: #93efff; }
+
+.dashboard li:nth-child(18).on {
+  background-color: #96e9ff; }
+
+.dashboard li:nth-child(19).on {
+  background-color: #99e5ff; }
+
+.dashboard li:nth-child(20).on {
+  background-color: #9edeff; }
+
+.dashboard li:nth-child(21).on {
+  background-color: #a1d9ff; }
+
+.dashboard li:nth-child(22).on {
+  background-color: #a5d2ff; }
+
+.dashboard li:nth-child(23).on {
+  background-color: #a8cdff; }
+
+.dashboard li:nth-child(24).on {
+  background-color: #abc8ff; }
+
+.dashboard li:nth-child(25).on {
+  background-color: #aec2ff; }
+
+.dashboard li:nth-child(26).on {
+  background-color: #b2bdff; }
+
+.dashboard li:nth-child(27).on {
+  background-color: #b5b5ff; }
+
+.dashboard li:nth-child(28).on {
+  background-color: #baafff; }
+
+.dashboard li:nth-child(29).on {
+  background-color: #c0a8ff; }
+
+.dashboard li:nth-child(30).on {
+  background-color: #c6a2ff; }
+
+.dashboard li:nth-child(31).on {
+  background-color: #cc9cff; }
+
+.dashboard li:nth-child(32).on {
+  background-color: #d198fc; }
+
+.dashboard li:nth-child(33).on {
+  background-color: #d896f7; }
+
+.dashboard li:nth-child(34).on {
+  background-color: #df92f0; }
+
+.dashboard li:nth-child(35).on {
+  background-color: #e691ea; }
+
+.dashboard li:nth-child(36).on {
+  background-color: #eb8ee3; }
+
+.dashboard li:nth-child(37).on {
+  background-color: #f08adb; }
+
+.dashboard li:nth-child(38).on {
+  background-color: #f487d4; }
+
+.dashboard li:nth-child(39).on {
+  background-color: #ef79cf; }
+
+.dashboard li:nth-child(40).on {
+  background-color: #f177cf; }
+
+.dashboard li:nth-child(41).on {
+  background-color: #f174cf; }
+
+.dashboard li:nth-child(42).on {
+  background-color: #f272cf; }
+
+.dashboard li:nth-child(43).on {
+  background-color: #f672d2; }
+
+.dashboard li:nth-child(44).on {
+  background-color: #f76cd1; }
